@@ -30,8 +30,7 @@ var url = 'mongodb://0bc2b66d-60ee-4539-8792-89d243c305da:e5fbef2c-d762-4733-b3d
 MongoClient.connect(url, function(err, db) {
   assert.equal(null, err);
   console.log("Connected correctly to server");
- 
-insertDocuments(db, function() {
+  insertDocuments(db, function() {
     db.close();
   });
 });
