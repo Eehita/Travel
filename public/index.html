@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>NodeJS Starter Application</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheets/style.css">
-  </head>
+<head>
+<title>NodeJS Starter Application</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="stylesheets/lib/bootstrap.min.css">
+</head>
+<script type="text/javascript" src="/js/lib/bootstrap.min.js"></script>
+<body ng-app="Travel">
+Test Angular: 2+3 = {{ 2+3 }} <br><br><br>
+Type your name <input ng-model="name"> Hello {{ name }}
+<table>
+<tr>
+<td style= "width:30%;">
+<img class = "newappIcon" src="images/newapp-icon.png">
+</td>
+<td>
+<h1 id="message">Hello World!</h1>
+<p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
+</td>
+</tr>
+</table>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h1>Hello MEAN+</h1>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+Test Angular: 2+3= {{ 2+3 }}<br>
+</div>
+<div class="col-md-6">
+Type your name <input ng-model="name"> Hello {{ name }} 
+</div>
+<div class="col-md-3">
+</div>
+</div>
+</div>
+<script type="text/javascript" src="/js/lib/angular.min.js"></script>
 
-  <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="images/newapp-icon.png">
-        </td>
-        <td>
-          <h1 id="message">Hello World!</h1>
-          <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
-        </td>
-      </tr>
-    </table>
-  </body>
+<script type="text/javascript" src="/js/Travel.js"></script>
+</body>
 
 </html>

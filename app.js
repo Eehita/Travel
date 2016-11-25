@@ -25,7 +25,8 @@ var MongoClient = require('mongodb').MongoClient
   , assert = require('assert');
  
 // Connection URL 
-var url = 'mongodb://0bc2b66d-60ee-4539-8792-89d243c305da:e5fbef2c-d762-4733-b3d9-da1e3afebe63@50.23.230.149:10172/db';
+//var url = 'mongodb://0bc2b66d-60ee-4539-8792-89d243c305da:e5fbef2c-d762-4733-b3d9-da1e3afebe63@50.23.230.149:10172/db';
+var url = 'mongodb://localhost:27017/Travel';
 // Use connect method to connect to the Server 
 MongoClient.connect(url, function(err, db) {
   assert.equal(null, err);
