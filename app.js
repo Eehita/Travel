@@ -11,8 +11,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var ideasController = require('./server/controllers/ideas-controller');
 
-mongoose.connect('mongodb://localhost:27017/Final');
-//mongoose.connect('mongodb://0bc2b66d-60ee-4539-8792-89d243c305da:e5fbef2c-d762-4733-b3d9-da1e3afebe63@50.23.230.149:10172/db');
+//mongoose.connect('mongodb://localhost:27017/Final');
+mongoose.connect('mongodb://0bc2b66d-60ee-4539-8792-89d243c305da:e5fbef2c-d762-4733-b3d9-da1e3afebe63@50.23.230.149:10172/db');
 
 app.use(bodyParser());
 
