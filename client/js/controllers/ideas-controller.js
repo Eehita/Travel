@@ -9,12 +9,18 @@ app.controller('ideasController', ['$scope', '$resource', function ($scope, $res
 
   $scope.createIdea = function () {
     var idea = new Idea();
-    idea.name = $scope.ideaName;
-    idea.description = $scope.ideaDescription;
+    idea.projectName = $scope.projectName;
+    idea.studentName = $scope.studentName;
+    idea.projectDescription = $scope.projectDescription;
+    idea.studentEmail = $scope.studentEmail;
+    idea.projectURL = $scope.projectURL;
     idea.$save(function (result) {
       $scope.ideas.push(result);
-      $scope.ideaName = '';
-      $scope.ideaDescription = '';
+      $scope.projectName = '';
+      $scope.studentName = '';
+      $scope.projectDescription = '';
+      $scope.studentEmail = '';
+      $scope.projectURL = '';
     });
   }
 }]);

@@ -1,6 +1,9 @@
 var mongoose = require('mongoose');
 
 module.exports = mongoose.model('Idea', {
-  name: String,
-  description: String
+  projectName: String,
+  studentName: String,
+  studentEmail: String,
+  projectDescription: String,
+  projectURL: String
 });

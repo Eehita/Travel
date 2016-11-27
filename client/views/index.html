@@ -17,14 +17,20 @@
         <h1>There are {{ideas.length}} ideas</h1>
         <ul>
           <li ng-repeat="idea in ideas">
-            {{idea.name}},
-            {{idea.description}}
+            {{idea.projectName}},
+            {{idea.studentName}},
+            {{idea.projectDescription}},
+            {{idea.studentEmail}},
+            {{idea.projectURL}}
           </li>
         </ul>
         <form ng-submit="createIdea()">
-          <input type="text" placeholder="Idea name" ng-model="ideaName"></input>
-          <input type="text" placeholder="Idea Description" ng-model="ideaDescription"></input>
-          <button type="submit">Add</button>
+          <input type="text" placeholder="Project Name" ng-model="projectName"></input>
+          <input type="text" placeholder="Student Name" ng-model="studentName"></input>
+          <input type="text" placeholder="Project Description" ng-model="projectDescription"></input>
+          <input type="text" placeholder="Student Email" ng-model="studentEmail"></input>
+          <input type="text" placeholder="Project URL" ng-model="projectURL"></input>
+          <button type="submit">Add Project!</button>
         </form> 
     </div>
 
